@@ -1,4 +1,4 @@
-Graficki sistem za upravljanje bazom cvećara
+Grafički sistem za upravljanje bazom cvećara
 
 Radili:
 Luka Đelić PR60/2020
