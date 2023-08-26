@@ -1,0 +1,190 @@
+﻿<Window x:Class="PR60PR69.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR60PR69"
+        xmlns:win32="clr-namespace:Microsoft.Win32;assembly=PresentationFramework"
+        mc:Ignorable="d"
+        Title="Cvećare" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="ForestGreen" BorderThickness="2, 2, 1, 2" Grid.RowSpan="2">
+            <DockPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Margin="5">
+                <TextBlock DockPanel.Dock="Top" FontWeight="Black" FontSize="15" TextAlignment="Center" Margin="5,0,5,5">Cvećare</TextBlock>
+                <TextBlock DockPanel.Dock="Top" Margin="5, 5, 5, 5">Pretraga:</TextBlock>
+                <TextBox Name="Pretraga" Padding="2" DockPanel.Dock="Top" TextChanged="Pretraga_TextChanged"></TextBox>
+                <Button Name="DodajCvecaru" DockPanel.Dock="Bottom" Click="DodajCvecaru_Click">Dodaj Cvećaru</Button>
+                <Button Name="Sortiraj" DockPanel.Dock="Top" Margin="0,5,0,-1" Click="Sortiraj_Click">Sortiraj cvećare po vrednosti</Button>
+                <TreeView Margin="0,0,0,5" Name="trvCvecare" ItemsSource="{Binding Cvecare1}" DragEnter="TrvCvecare_DragEnter" SelectedItemChanged="TrvCvecare_SelectedItemChanged">
+                    <TreeView.Resources>
+                        <ContextMenu x:Key="MeniCvecare">
+                            <MenuItem Header="Promeni" Name="Promeni_cvecaru" Click="Promeni_cvecaru_Click"></MenuItem>
+                            <MenuItem Header="Obrisi" Name="Obrisi_cvecaru" Click="Obrisi_cvecaru_Click"></MenuItem>
+                        </ContextMenu>
+                        <Style TargetType="TreeViewItem">
+                            <Setter Property="ContextMenu" Value="{StaticResource MeniCvecare}"></Setter>
+                        </Style>
+                        <HierarchicalDataTemplate DataType="{x:Type local:Cvecara}"  ItemsSource="{Binding ListaSvega}">
+                            <WrapPanel AllowDrop="True" Drop="TrvCvecare_Drop">
+                                <Image MaxHeight="18" MaxWidth="32" Margin="0,0,10,0" Source="{Binding Logo_putanja}"></Image>
+                                <TextBlock Text="{Binding Naziv}"/>
+                            </WrapPanel>
+                        </HierarchicalDataTemplate>
+                        <DataTemplate DataType="{x:Type local:Radnik}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="     "/>
+                                <TextBlock Text="{Binding Ime}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type local:CvetUCvecari}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="     "/>
+                                <TextBlock Text="{Binding Naziv}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </TreeView.Resources>
+                </TreeView>
+            </DockPanel>
+        </Border>
+        <Border BorderBrush="ForestGreen" BorderThickness="1, 2, 1, 1" Grid.Column="1">
+            <DockPanel Grid.Row="0" Grid.Column="1" Margin="5">
+                <Button Name="DodajRadnika" DockPanel.Dock="Bottom" Click="DodajRadnika_Click">Dodaj radnika</Button>
+                <TextBlock DockPanel.Dock="Top" FontWeight="Black" FontSize="15" TextAlignment="Center" Margin="5,0,5,5">Radnici</TextBlock>
+                <ListView Name="ListaRadnika" PreviewMouseLeftButtonDown="PreviewMouseLeftButtonDown" MouseMove="ListaRadnika_MouseMove" DockPanel.Dock="Top" Margin="0,0,0,5" ItemsSource="{Binding Radnici1}" SelectionChanged="ListaRadnika_SelectionChanged">
+                    <ListView.Resources>
+                        <ContextMenu x:Key="Meni1">
+                            <MenuItem Header="Promeni" Name="Promeni_radnika" Click="Promeni_radnika_Click"></MenuItem>
+                            <MenuItem Header="Obrisi" Name="Obrisi_radnika" Click="Obrisi_radnika_Click"></MenuItem>
+                        </ContextMenu>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="ContextMenu" Value="{StaticResource Meni1}"/>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <Image Source="{Binding Slika_putanja}" MaxHeight="18" MaxWidth="32" Margin="0,0,10,0"></Image>
+                                <TextBlock Text="{Binding Ime}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding Prezime}"></TextBlock>
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </DockPanel>
+        </Border>
+        <Border BorderBrush="ForestGreen" BorderThickness="1, 1, 1, 2" Grid.Column="1" Grid.Row="1">
+            <DockPanel Grid.Row="1" Grid.Column="1" Margin="5">
+                <Button Name="DodajCvet"  DockPanel.Dock="Bottom" Click="DodajCvet_Click">Dodaj cvet</Button>
+                <TextBlock DockPanel.Dock="Top" FontWeight="Black" FontSize="15" TextAlignment="Center" Margin="5,0,5,5">Cveće</TextBlock>
+                <ListView Name="ListaCveca" DockPanel.Dock="Top" Margin="0,0,0,5" ItemsSource="{Binding Cvece1}" SelectionChanged="ListaCveca_SelectionChanged" PreviewMouseLeftButtonDown="PreviewMouseLeftButtonDown" MouseMove="ListaCveca_MouseMove">
+                    <ListView.Resources>
+                        <ContextMenu x:Key="Meni2">
+                            <MenuItem Header="Promeni" Name="Promeni_cvet" Click="Promeni_cvet_Click"></MenuItem>
+                            <MenuItem Header="Obrisi" Name="Obrisi_cvet" Click="Obrisi_cvet_Click"></MenuItem>
+                        </ContextMenu>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="ContextMenu" Value="{StaticResource Meni2}"/>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel ClipToBounds="True">
+                                <TextBlock Text="{Binding Naziv}" FontWeight="Black"></TextBlock>
+                                <TextBlock Text=" ("></TextBlock>
+                                <TextBlock Text="{Binding LatNaziv}" FontStyle="Italic"></TextBlock>
+                                <TextBlock Text=") "></TextBlock>
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </DockPanel>
+        </Border>
+        <Border BorderBrush="ForestGreen" BorderThickness="1, 2, 2, 2" Grid.Column="2" Grid.RowSpan="2">
+            <DockPanel Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Margin="5" LastChildFill="False">
+                <Button Name="Cuvanje" DockPanel.Dock="Bottom" Click="Cuvanje_Click">Sačuvaj</Button>
+                <StackPanel Name="Cvecara" DockPanel.Dock="Top" Visibility="Collapsed">
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="14"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <TextBlock Name="RadnjaCvecarom" FontWeight="Bold" TextAlignment="Center" FontSize="20" Margin="0,5,0,10">Informacije o cvećari:</TextBlock>
+                    <Image></Image>
+                    <TextBlock Margin="5,0,5,5">Naziv:</TextBlock>
+                    <TextBlock Name="ICrNaziv" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBox Name="DCrNaziv" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Margin="5,5,5,5">Adresa:</TextBlock>
+                    <TextBlock Name="ICrAdresa" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBox Name="DCrAdresa" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Margin="5,5,5,5">Godina osnivanja:</TextBlock>
+                    <TextBlock Name="ICrGodina" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBox Name="DCrGodina" Margin="5,5,5,5"></TextBox>
+                    <Button Name="DCrSlika" Margin="5,10,5,0" Click="DCrSlika_Click">Dodaj sliku...</Button>
+                    <Button Name="DCrDodaj" Margin="5,5,5,0" Click="DCrDodaj_Click">Dodaj</Button>
+                    <Button Name="DCrIzmeni" Margin="5,5,5,0" Click="DCrIzmeni_Click">Izmeni</Button>
+                    <Button Name="DCrOtkazi" Margin="5,5,5,5" Click="DCrOtkazi_Click">Otkaži</Button>
+                </StackPanel>
+                <DockPanel Name="Radnik" LastChildFill="True" DockPanel.Dock="Top" Visibility="Collapsed">
+                <StackPanel DockPanel.Dock="Top">
+                        <StackPanel.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="FontSize" Value="14"></Setter>
+                            </Style>
+                        </StackPanel.Resources>
+                    <TextBlock Name="RadnjaRadnikom" FontWeight="Bold" TextAlignment="Center" FontSize="20" Margin="0,5,0,10"></TextBlock>
+                    <TextBlock Margin="5,0,5,5">Ime:</TextBlock>
+                    <TextBox Name="DRIme" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Name="IRIme" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBlock Margin="5,5,5,5">Prezime:</TextBlock>
+                    <TextBox Name="DRPrezime" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Name="IRPrezime" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBlock Margin="5,5,5,5">JMBG:</TextBlock>
+                    <TextBox Name="DRJMBG" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Name="IRJMBG" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBlock Margin="5,5,5,5">Godine iskustva:</TextBlock>
+                    <TextBox Name="DRGod" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Name="IRGod" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <Button Name="DRSlika" Margin="5,10,5,0" Click="DRSlika_Click">Dodaj sliku...</Button>
+                    <Button Name="DRDodaj" Margin="5,5,5,0" Click="DRDodaj_Click">Dodaj</Button>
+                    <Button Name="PRIzmeni" Margin="5, 5, 5, 0" Click="PRIzmeni_Click">Izmeni</Button>
+                    <Button Name="DROtkazi" Margin="5,5,5,5" Click="DROtkazi_Click">Otkaži</Button>
+                </StackPanel>
+                    <Image Name="SlikaRadnika" Visibility="Collapsed" Width="{Binding SystemParameters.PrimaryScreenWidth}" Margin="10,10,10,10" Source="{Binding Slika_putanja}"></Image>
+                </DockPanel>
+                <StackPanel Name="Cvet" DockPanel.Dock="Top" Visibility="Collapsed">
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="14"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <TextBlock Name="RadnjaCvetom" FontWeight="Bold" TextAlignment="Center" FontSize="20" Margin="0,5,0,10"></TextBlock>
+                    <TextBlock Margin="5,0,5,5">Naziv:</TextBlock>
+                    <TextBlock Name="ICNaziv" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBox Name="DCNaziv" Margin="5,5,5,5" ></TextBox>
+                    <TextBlock Margin="5,5,5,5">Latinski naziv:</TextBlock>
+                    <TextBlock Name="ICLatNaziv" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBox Name="DCLatNaziv" Margin="5,5,5,5" ></TextBox>
+                    <TextBlock Margin="5,5,5,5">Boja:</TextBlock>
+                    <TextBlock Name="ICBoja" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBox Name="DCBoja" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Name="Cena" Margin="5, 5, 5, 5">Cena:</TextBlock>
+                    <TextBlock x:Name="ICCena" Margin="10,0,5,0" FontWeight="Bold"></TextBlock>
+                    <TextBox Name="DCCena" Margin="5,5,5,5"></TextBox>
+                    <Button Name="DodavanjeCveta_Dodaj" Margin="5,10,5,0" Click="DodavanjeCveta_Dodaj_Click">Dodaj</Button>
+                    <Button Name="Promena_cveta_izmeni" Margin="5,5,5,0" Click="Promena_cveta_izmeni_Click">Izmeni</Button>
+                    <Button Name="DodavanjeCveta_Otkazi" Margin="5,5,5,5" Click="DodavanjeCveta_Otkazi_Click">Otkaži</Button>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>

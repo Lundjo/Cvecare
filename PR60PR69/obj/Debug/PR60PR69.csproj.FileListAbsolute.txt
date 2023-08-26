@@ -1,0 +1,75 @@
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\bin\Debug\PR60PR69.exe.config
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\bin\Debug\PR60PR69.exe
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\bin\Debug\PR60PR69.pdb
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csprojAssemblyReference.cache
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\MainWindow.g.cs
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\App.g.cs
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69_MarkupCompile.cache
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69_MarkupCompile.lref
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\MainWindow.baml
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69.g.resources
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69.Properties.Resources.resources
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.GenerateResource.cache
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.CoreCompileInputs.cache
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69.exe
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\PR60PR69.pdb
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\DodavanjeCveta.g.cs
+C:\Users\Moco26\source\repos\PR60PR69\PR60PR69\obj\Debug\DodavanjeCveta.baml
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\bin\Debug\PR60PR69.exe.config
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\bin\Debug\PR60PR69.exe
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\bin\Debug\PR60PR69.pdb
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.AssemblyReference.cache
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\DodavanjeCveta.g.cs
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\MainWindow.g.cs
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\App.g.cs
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69_MarkupCompile.cache
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69_MarkupCompile.lref
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\DodavanjeCveta.baml
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\MainWindow.baml
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69.g.resources
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69.Properties.Resources.resources
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.GenerateResource.cache
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.CoreCompileInputs.cache
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69.exe
+C:\Users\Ludjo\Downloads\PR60PR69\PR60PR69\obj\Debug\PR60PR69.pdb
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\bin\Debug\PR60PR69.exe.config
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\bin\Debug\PR60PR69.exe
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\bin\Debug\PR60PR69.pdb
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.AssemblyReference.cache
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\DodavanjeCveta.g.cs
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\MainWindow.g.cs
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\App.g.cs
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69_MarkupCompile.cache
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69_MarkupCompile.lref
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\DodavanjeCveta.baml
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\MainWindow.baml
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69.g.resources
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69.Properties.Resources.resources
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.GenerateResource.cache
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.CoreCompileInputs.cache
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69.exe
+C:\Users\Ludjo\Desktop\PR60PR69\PR60PR69\obj\Debug\PR60PR69.pdb
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\bin\Debug\PR60PR69.exe.config
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\bin\Debug\PR60PR69.exe
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\bin\Debug\PR60PR69.pdb
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.AssemblyReference.cache
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\DodavanjeCveta.g.cs
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\MainWindow.g.cs
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\App.g.cs
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69_MarkupCompile.cache
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69_MarkupCompile.lref
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\DodavanjeCveta.baml
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\MainWindow.baml
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69.g.resources
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69.Properties.Resources.resources
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.GenerateResource.cache
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69.csproj.CoreCompileInputs.cache
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69.exe
+C:\Users\Ludjo\Dropbox\Четврти семестар\ООТ\PR60PR69\PR60PR69\obj\Debug\PR60PR69.pdb

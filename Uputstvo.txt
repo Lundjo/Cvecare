@@ -1,0 +1,14 @@
+Cvetovi, cvecare i radnici se dodaju klikom na respektivne dugmadi u svojim sekcijama.
+
+Izmena i brisanje se vrsi desnim klikom na odredjeni objekat u svojoj listi. 
+
+Informacije se prikazuju kada se selektuje neki objekat bilo gde.
+
+Dodavanje cveta iz liste se vrsi selektovanjem odredjene cvecare i drag and drop-ovanjem cveta / radnika.
+
+Pretraga se vrsi unosom teksta u pretragu.
+
+Dugme sacuvaj cuva sve podatke u fajlove.
+
+KNOWN ISSUES: 
+U cvecari, brisanje radnika i cveta nije skroz implementirano.

@@ -1,0 +1,19 @@
+﻿<Window x:Class="PR60PR69.DodavanjeCveta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR60PR69"
+        mc:Ignorable="d"
+        FocusManager.FocusedElement="{Binding CenaBox}"
+        Title="DodavanjeCveta" Height="140" Width="250" ResizeMode="NoResize">
+    <Grid>
+        <Border Padding="5">
+            <DockPanel LastChildFill="False">
+                <TextBlock Margin="5,5,5,5" DockPanel.Dock="Top">Unesite cenu cveta:</TextBlock>
+                <TextBox Name="CenaBox" Margin="5,0,5,5" DockPanel.Dock="Top"></TextBox>
+                <Button DockPanel.Dock="Bottom" Margin="5,5,5,5" Click="Button_Click">OK</Button>
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>
